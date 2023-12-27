@@ -16,10 +16,12 @@ ament_target_dependencies(p1_multi_straight_drive rclcpp turtlesim geometry_msgs
 add_executable(p1_multi_turtle_controller src/p1_c_multi_turtle_controller.cpp)
 ament_target_dependencies(p1_multi_turtle_controller rclcpp turtlesim geometry_msgs)
 
+add_executable(test_run src/test_run.cpp)
+ament_target_dependencies(test_run rclcpp turtlesim geometry_msgs)
 
 
 install(TARGETS
-  p1_multi_turtle_controller p1_single_straight_drive p1_multi_straight_drive
+  p1_multi_turtle_controller p1_single_straight_drive p1_multi_straight_drive test_run
   DESTINATION lib/${PROJECT_NAME}
 )
 install(DIRECTORY launch
