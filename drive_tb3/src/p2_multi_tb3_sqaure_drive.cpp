@@ -24,7 +24,7 @@ class drive_turtlesim : public rclcpp::Node
     drive_turtlesim()
     : Node("turtlesim_driving"), count_(0)
     {
-      this->declare_parameter<std::string>("cmd_vel_topic","/turtle1/cmd_vel");
+      this->declare_parameter<std::string>("cmd_vel_topic","/robot_a/cmd_vel");
       std::string cmd_vel_topic_var = this->get_parameter("cmd_vel_topic").as_string();
 
 

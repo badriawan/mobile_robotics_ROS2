@@ -54,6 +54,7 @@ add_executable(p6_b_sdf_spawner src/p6_b_sdf_spawner.cpp)
 ament_target_dependencies(p6_b_sdf_spawner rclcpp gazebo_msgs)
 
 
+
 install(TARGETS p2_multi_tb3_sqaure_drive
                 p3_a_acceleration p3_b_angular_velocity p3_c_linear_goal p3_d_xy_goal
                 p5_a_lidar_data_sub p5_b_maze_solving p5_c_camera_data_sub p5_d_line_following
